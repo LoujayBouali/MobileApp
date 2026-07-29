@@ -13,18 +13,52 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cette application a besoin d'accéder à la caméra pour scanner vos documents.",
+        "NSPhotoLibraryUsageDescription": "Cette application a besoin d'accéder à vos photos pour importer des documents.",
+        "NSMicrophoneUsageDescription": "Cette application a besoin d'accéder au microphone pour la saisie vocale.",
+        "NSSpeechRecognitionUsageDescription": "Cette application utilise la reconnaissance vocale pour faciliter la saisie de vos documents."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.anonymous.DocScanVocal"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-system-ui",
+      "expo-secure-store",
+      "expo-localization",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-image-picker",
+      "expo-document-picker",
+      "@react-native-voice/voice",
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "L'application a besoin d'accéder à la caméra pour scanner vos documents."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png"
+        }
+      ]
+    ]
   }
 }

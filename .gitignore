@@ -39,3 +39,14 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# environment variables
+.env
+
+# local database
+*.db
+*.sqlite
+
+# build artifacts
+*.apk
+*.aab
