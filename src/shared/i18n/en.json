@@ -1,0 +1,58 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "monthlyTotal": "Monthly total",
+    "byCategory": "Spending by category",
+    "evolution": "Monthly evolution"
+  },
+  "documents": {
+    "title": "Documents",
+    "newDocument": "New document",
+    "type": "Type",
+    "category": "Category",
+    "status": "Status",
+    "amount": "Amount",
+    "tva": "VAT",
+    "provider": "Provider",
+    "date": "Date",
+    "notes": "Notes",
+    "tags": "Tags",
+    "empty": "No documents yet",
+    "emptySubtitle": "Add your first invoice by scanning or entering manually"
+  },
+  "status": {
+    "en_attente": "Pending",
+    "payee": "Paid",
+    "remboursee": "Refunded",
+    "annulee": "Cancelled"
+  },
+  "capture": {
+    "title": "Scanner",
+    "takePhoto": "Take a photo",
+    "importGallery": "Import from gallery",
+    "importPdf": "Import PDF",
+    "processing": "Processing..."
+  },
+  "search": {
+    "placeholder": "Provider, amount, note...",
+    "filters": "Filters",
+    "noResults": "No results"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "currency": "Currency",
+    "categories": "Categories",
+    "language": "Language",
+    "notifications": "Notifications"
+  }
+}

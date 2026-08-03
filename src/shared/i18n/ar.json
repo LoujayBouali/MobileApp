@@ -1,0 +1,58 @@
+{
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "loading": "جار التحميل...",
+    "error": "حدث خطأ"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "monthlyTotal": "إجمالي الشهر",
+    "byCategory": "التوزيع حسب الفئة",
+    "evolution": "التطور الشهري"
+  },
+  "documents": {
+    "title": "المستندات",
+    "newDocument": "مستند جديد",
+    "type": "النوع",
+    "category": "الفئة",
+    "status": "الحالة",
+    "amount": "المبلغ",
+    "tva": "الضريبة",
+    "provider": "المورد",
+    "date": "التاريخ",
+    "notes": "ملاحظات",
+    "tags": "الوسوم",
+    "empty": "لا توجد مستندات بعد",
+    "emptySubtitle": "أضف أول فاتورة عن طريق المسح أو الإدخال اليدوي"
+  },
+  "status": {
+    "en_attente": "قيد الانتظار",
+    "payee": "مدفوعة",
+    "remboursee": "مستردة",
+    "annulee": "ملغاة"
+  },
+  "capture": {
+    "title": "مسح ضوئي",
+    "takePhoto": "التقاط صورة",
+    "importGallery": "استيراد من المعرض",
+    "importPdf": "استيراد PDF",
+    "processing": "جارٍ التحليل..."
+  },
+  "search": {
+    "placeholder": "المورد، المبلغ، ملاحظة...",
+    "filters": "الفلاتر",
+    "noResults": "لا توجد نتائج"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "currency": "العملة",
+    "categories": "الفئات",
+    "language": "اللغة",
+    "notifications": "الإشعارات"
+  }
+}

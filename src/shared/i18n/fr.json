@@ -1,0 +1,58 @@
+{
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "monthlyTotal": "Total du mois",
+    "byCategory": "Répartition par catégorie",
+    "evolution": "Évolution mensuelle"
+  },
+  "documents": {
+    "title": "Documents",
+    "newDocument": "Nouveau document",
+    "type": "Type",
+    "category": "Catégorie",
+    "status": "Statut",
+    "amount": "Montant",
+    "tva": "TVA",
+    "provider": "Fournisseur",
+    "date": "Date",
+    "notes": "Notes",
+    "tags": "Étiquettes",
+    "empty": "Aucun document pour le moment",
+    "emptySubtitle": "Ajoutez votre première facture en scannant ou en saisissant manuellement"
+  },
+  "status": {
+    "en_attente": "En attente",
+    "payee": "Payée",
+    "remboursee": "Remboursée",
+    "annulee": "Annulée"
+  },
+  "capture": {
+    "title": "Scanner",
+    "takePhoto": "Prendre une photo",
+    "importGallery": "Importer depuis la galerie",
+    "importPdf": "Importer un PDF",
+    "processing": "Analyse en cours..."
+  },
+  "search": {
+    "placeholder": "Fournisseur, montant, note...",
+    "filters": "Filtres",
+    "noResults": "Aucun résultat"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "profile": "Profil",
+    "currency": "Devise",
+    "categories": "Catégories",
+    "language": "Langue",
+    "notifications": "Notifications"
+  }
+}
