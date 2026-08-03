@@ -1,5 +1,4 @@
 {
-  "$schema": "https://docs.expo.dev/static/expo-json-schema-v1.json",
   "expo": {
     "name": "DocScanVocal",
     "slug": "DocScanVocal",
