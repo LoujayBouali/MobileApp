@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.expo.dev/static/expo-json-schema-v1.json",
   "expo": {
     "name": "DocScanVocal",
     "slug": "DocScanVocal",
@@ -38,15 +39,13 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-sqlite",
-      "expo-system-ui",
-      "expo-secure-store",
-      "expo-localization",
-      "expo-sharing",
-      "expo-status-bar",
-      "expo-image-picker",
-      "expo-document-picker",
-      "@react-native-voice/voice",
+      [
+        "@react-native-voice/voice/plugin",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access the microphone",
+          "speechRecognitionPermission": "Allow $(PRODUCT_NAME) to securely recognize user speech"
+        }
+      ],
       [
         "react-native-vision-camera",
         {
