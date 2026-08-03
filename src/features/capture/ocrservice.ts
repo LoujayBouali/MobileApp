@@ -1,4 +1,3 @@
-// src/features/capture/ocrService.ts
 import * as TextRecognition from '@dariyd/react-native-text-recognition';
 
 export const extractTextFromImage = async (imagePath: string): Promise<string> => {

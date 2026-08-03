@@ -2,26 +2,22 @@ import { useRef, useState } from 'react';
 import { View, Button } from 'react-native';
 import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
 import * as ImagePicker from 'expo-image-picker';
-import { extractTextFromImage } from './ocrService';
-import { extractInvoiceData } from './dataExtractor';
-import * as ImagePicker from 'expo-image-picker';
+import { extractTextFromImage } from './ocrservice';
+import { extractInvoiceData } from './dataextractor';
 import * as DocumentPicker from 'expo-document-picker';
 
 export const importPdfDocument = async () => {
   const result = await DocumentPicker.getDocumentAsync({ type: 'application/pdf' });
   if (result.canceled) return null;
-  // Option simple : stocker le PDF tel quel comme pièce jointe,
-  // sans OCR automatique (le texte PDF natif peut être extrait différemment)
   return result.assets[0].uri;
 };
 
 export default function ScannerScreen({ navigation }) {
-  const cameraRef = useRef<Camera>(null);
-  const device = useCameraDevice('back');
-  const { hasPermission, requestPermission } = useCameraPermission();
-  const [processing, setProcessing] = useState(false);
-
-  const processAndNavigate = async (imagePath: string) => {
+    const cameraRef = useRef<InstanceType<typeof Camera>>(null);
+    const device = useCameraDevice('back');
+    const { hasPermission, requestPermission } = useCameraPermission();
+    const [processing, setProcessing] = useState(false);
+    const processAndNavigate = async (imagePath: string) => {
     setProcessing(true);
     const rawText = await extractTextFromImage(imagePath);
     const extractedData = extractInvoiceData(rawText);
